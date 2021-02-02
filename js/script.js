@@ -41,7 +41,7 @@ function sendData(){
   } );
 
   // Set up our request
-  XHR.open( "POST", "http://niovi.aueb.gr/~p3160133/mail/contact_me.php" );
+  XHR.open( "POST", "https://formspree.io/f/mqkgjqdd" );
 
   // The data sent is what the user provided in the form
   XHR.send( FD );
