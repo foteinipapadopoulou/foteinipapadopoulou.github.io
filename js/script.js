@@ -42,8 +42,7 @@ function sendData(){
   } );
 
   // Set up our request
-  XHR.open( "POST", "https://formspree.io/f/mqkgjqdd",true );
-  XHR.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  XHR.open( "POST", "https://formspree.io/f/mqkgjqdd");
   // The data sent is what the user provided in the form
   XHR.send( FD );
 }
