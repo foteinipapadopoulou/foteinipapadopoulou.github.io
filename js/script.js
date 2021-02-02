@@ -17,6 +17,7 @@ window.addEventListener('load',function(){
 
 function sendData(){
     const XHR = new XMLHttpRequest();
+    
     var displayAlert = document.getElementById("displayAlert");
     // Bind the FormData object and the form element
     const FD = new FormData( form );
@@ -41,8 +42,8 @@ function sendData(){
   } );
 
   // Set up our request
-  XHR.open( "POST", "https://formspree.io/f/mqkgjqdd" );
-
+  XHR.open( "POST", "https://formspree.io/f/mqkgjqdd",true );
+  http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
   // The data sent is what the user provided in the form
   XHR.send( FD );
 }
