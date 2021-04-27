@@ -7,13 +7,12 @@ window.addEventListener('load',function(){
                 event.preventDefault();
                 event.stopPropagation();
             }
-            var response = grecaptcha.getResponse();
-            if(response.length == 0) 
+            var res = grecaptcha.getResponse();
+            if(res == "" || res == undefined || res.length == 0) 
             { 
                 //reCaptcha not verified
-                alert("please verify you are humann!"); 
                 event.preventDefault();
-                return false;
+                event.stopPropagation();
             }
             form.classList.add('was-validated');
         },false);
