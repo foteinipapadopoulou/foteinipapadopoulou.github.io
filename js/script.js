@@ -29,14 +29,22 @@ function sendData(){
     // Bind the FormData object and the form element
     const FD = new FormData( form );
     // Define what happens on successful data submission
-    XHR.addEventListener( "load", function() {
-        displayAlert.hidden = false;
-        displayAlert.getElementsByTagName("h4")[0].innerHTML = "Success!";
-        displayAlert.classList.remove("alert-danger");
-        displayAlert.classList.add("alert-success");
-        displayAlert.getElementsByTagName("p")[0].innerHTML = "Your message has been sent!"
+    XHR.onload = function(e) {
+        if (this.status == 200) { 
+            displayAlert.hidden = false;
+            displayAlert.getElementsByTagName("h4")[0].innerHTML = "Success!";
+            displayAlert.classList.remove("alert-danger");
+            displayAlert.classList.add("alert-success");
+            displayAlert.getElementsByTagName("p")[0].innerHTML = "Your message has been sent!"
+        }else{
+            displayAlert.hidden = false;
+            displayAlert.getElementsByTagName("h4")[0].innerHTML = "Error!";
+            displayAlert.classList.remove("alert-success");
+            displayAlert.classList.add("alert-danger");
+            displayAlert.getElementsByTagName("p")[0].innerHTML = "Sorry , it seems that my mail server is not responding. Please try again later! "
 
-    } );
+        }
+    } ;
 
     // Define what happens in case of error
     XHR.addEventListener( "error", function( ) {
