@@ -13,9 +13,9 @@ window.addEventListener('load',function(){
                 //reCaptcha not verified
                 event.preventDefault();
                 event.stopPropagation();
-                document.getElementById("error-captcha").style.display = "block";
+                document.getElementById("error-recaptcha").style.display = "block";
             }else{
-                document.getElementById("error-captcha").style.visibility = "none";
+                document.getElementById("error-recaptcha").style.display = "none";
             }
             form.classList.add('was-validated');
         },false);
