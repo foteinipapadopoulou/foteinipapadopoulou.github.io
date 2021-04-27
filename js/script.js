@@ -36,6 +36,7 @@ function sendData(){
             displayAlert.classList.remove("alert-danger");
             displayAlert.classList.add("alert-success");
             displayAlert.getElementsByTagName("p")[0].innerHTML = "Your message has been sent!"
+            grecaptcha.reset();
         }else{
             displayAlert.hidden = false;
             displayAlert.getElementsByTagName("h4")[0].innerHTML = "Error!";
@@ -79,11 +80,12 @@ function sendData(){
       }
     }
 }
-window.verifyRecaptchaCallback = function (response) {
+
+verifyRecaptchaCallback = function (response) {
     $('input[data-recaptcha]').val(response).trigger('change')
 }
 
-window.expiredRecaptchaCallback = function () {
+expiredRecaptchaCallback = function () {
     $('input[data-recaptcha]').val("").trigger('change')
 }
 // Access the form element...
