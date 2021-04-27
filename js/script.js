@@ -24,7 +24,8 @@ window.addEventListener('load',function(){
     
 },false);
 
-function OnCompleted(){
+var OnCompleted = function(response){
+    console.log(response);
     document.getElementById("error-recaptcha").style.display = "none";
 }
 function sendData(){
@@ -63,20 +64,11 @@ function sendData(){
     
   // The data sent is what the user provided in the form
   XHR.send( FD );
-     XHR.onreadystatechange = function(){
-      // Resource: https://developer.mozilla.org/tr/docs/Web/API/XMLHttpRequest/readyState
- 
-      // readyState
-      // 0 = UNSENT
-      // 1 = OPENED
-      // 2 = HEADERS_RECEIVED
-      // 3 = LOADING
-      // 4 = DONE
-      
-      if(this.readyState == 4){
-        // when request is complete.
-        console.log(this.response);
-      }
+    XHR.onreadystatechange = function(){
+    if(this.readyState == 4){
+    // when request is complete.
+    console.log(this.response);
+    }
     }
 }
 
