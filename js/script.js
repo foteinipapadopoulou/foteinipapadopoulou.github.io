@@ -24,7 +24,9 @@ window.addEventListener('load',function(){
     
 },false);
 
-
+function OnCompleted(){
+    document.getElementById("error-recaptcha").style.display = "none";
+}
 function sendData(){
     const XHR = new XMLHttpRequest();
     
