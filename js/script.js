@@ -82,11 +82,16 @@ function sendData(){
 }
 
 verifyRecaptchaCallback = function (response) {
-    $('input[data-recaptcha]').val(response).trigger('change')
+    var event = new Event('change');
+    document.querySelector('input[data-recaptcha]').value = response
+    document.querySelector('input[data-recaptcha]').dispatchEvent(event);
 }
 
 expiredRecaptchaCallback = function () {
-    $('input[data-recaptcha]').val("").trigger('change')
+    var event = new Event('change');
+    document.querySelector('input[data-recaptcha]').value = "";
+    document.querySelector('input[data-recaptcha]').dispatchEvent(event);
+
 }
 // Access the form element...
 const form = document.getElementById( "contactForm" );
