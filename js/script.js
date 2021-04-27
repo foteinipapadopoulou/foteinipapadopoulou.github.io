@@ -42,7 +42,7 @@ function sendData(){
   } );
 
   // Set up our request
-  XHR.open( "POST", "https://formspree.io/f/mqkgjqdd");
+  XHR.open( "POST", "https://formcarry.com/s/mprp5IvSAS3");
   // The data sent is what the user provided in the form
   XHR.send( FD );
 }
