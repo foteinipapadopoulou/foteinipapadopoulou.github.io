@@ -79,7 +79,13 @@ function sendData(){
       }
     }
 }
+window.verifyRecaptchaCallback = function (response) {
+    $('input[data-recaptcha]').val(response).trigger('change')
+}
 
+window.expiredRecaptchaCallback = function () {
+    $('input[data-recaptcha]').val("").trigger('change')
+}
 // Access the form element...
 const form = document.getElementById( "contactForm" );
 
