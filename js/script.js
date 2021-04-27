@@ -13,6 +13,9 @@ window.addEventListener('load',function(){
                 //reCaptcha not verified
                 event.preventDefault();
                 event.stopPropagation();
+                document.getElementById("error-captcha").style.visibility = "visible";
+            }else{
+                document.getElementById("error-captcha").style.visibility = "hidden";
             }
             form.classList.add('was-validated');
         },false);
@@ -38,6 +41,8 @@ function sendData(){
             displayAlert.getElementsByTagName("p")[0].innerHTML = "Your message has been sent!"
             grecaptcha.reset();
         }else{
+             // Define what happens in case of error
+   
             displayAlert.hidden = false;
             displayAlert.getElementsByTagName("h4")[0].innerHTML = "Error!";
             displayAlert.classList.remove("alert-success");
@@ -47,15 +52,7 @@ function sendData(){
         }
     } ;
 
-    // Define what happens in case of error
-    XHR.addEventListener( "error", function( ) {
-    displayAlert.hidden = false;
-    displayAlert.getElementsByTagName("h4")[0].innerHTML = "Error!";
-    displayAlert.classList.remove("alert-success");
-    displayAlert.classList.add("alert-danger");
-    displayAlert.getElementsByTagName("p")[0].innerHTML = "Sorry , it seems that my mail server is not responding. Please try again later! "
-
-  } );
+   
 
   // Set up our request
     
@@ -81,18 +78,7 @@ function sendData(){
     }
 }
 
-verifyRecaptchaCallback = function (response) {
-    var event = new Event('change');
-    document.querySelector('input[data-recaptcha]').value = response
-    document.querySelector('input[data-recaptcha]').dispatchEvent(event);
-}
 
-expiredRecaptchaCallback = function () {
-    var event = new Event('change');
-    document.querySelector('input[data-recaptcha]').value = "";
-    document.querySelector('input[data-recaptcha]').dispatchEvent(event);
-
-}
 // Access the form element...
 const form = document.getElementById( "contactForm" );
 
