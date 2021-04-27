@@ -44,10 +44,25 @@ function sendData(){
   // Set up our request
     
   XHR.open( "POST", "https://formcarry.com/s/mprp5IvSAS3");
-  XHR.setRequestHeader('Content-Type', 'application/json');
+  XHR.setRequestHeader('Accept', 'application/json');
     
   // The data sent is what the user provided in the form
   XHR.send( FD );
+     XHR.onreadystatechange = function(){
+      // Resource: https://developer.mozilla.org/tr/docs/Web/API/XMLHttpRequest/readyState
+ 
+      // readyState
+      // 0 = UNSENT
+      // 1 = OPENED
+      // 2 = HEADERS_RECEIVED
+      // 3 = LOADING
+      // 4 = DONE
+      
+      if(this.readyState == 4){
+        // when request is complete.
+        console.log(this.response);
+      }
+    }
 }
 
 // Access the form element...
