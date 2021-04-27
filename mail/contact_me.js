@@ -23,14 +23,13 @@ $(function () {
             $.ajax({
                 url: "https://formspree.io/f/mqkgjqdd",
                 type: "POST",
+                dataType: 'json',
                 data: {
                     name: name,
                     phone: phone,
                     email: email,
-                    message: message,
-                },
-                cache: false,
-                dataType: 'json',
+                    message: message
+                }, 
                 success: function () {
                     // Success message
                     $("#success").html("<div class='alert alert-success'>");
