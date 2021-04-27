@@ -42,7 +42,10 @@ function sendData(){
   } );
 
   // Set up our request
+    
   XHR.open( "POST", "https://formcarry.com/s/mprp5IvSAS3");
+    XHR.setRequestHeader('Content-Type', 'application/json');
+    XHR.setRequestHeader('Accept', 'application/json');
   // The data sent is what the user provided in the form
   XHR.send( FD );
 }
