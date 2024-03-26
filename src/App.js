@@ -17,9 +17,15 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-Measurement_Id = "G-D5V669R1DV";
-ReactGA.initialize(Measurement_Id);
+
+
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize("G-D5V669R1DV");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
