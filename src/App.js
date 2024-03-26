@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact/Contact";
+import ReactGA from 'react-ga4';
 import {
   BrowserRouter as Router,
   Route,
@@ -16,7 +17,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+Measurement_Id = "G-D5V669R1DV";
+ReactGA.initialize(Measurement_Id);
 function App() {
   const [load, upadateLoad] = useState(true);
 
