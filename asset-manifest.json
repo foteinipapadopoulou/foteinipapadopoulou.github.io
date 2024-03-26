@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.461e130f.css",
+    "main.js": "/static/js/main.0370c19c.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/avatar.png": "/static/media/avatar.0875a4095c95f0ca27a4.png",
+    "static/media/bg.png": "/static/media/bg.443b529deb126f6daa80.png",
+    "static/media/aueb.png": "/static/media/aueb.d931eedbec860458c624.png",
+    "static/media/logo.png": "/static/media/logo.6741825ec34a5253acc9.png",
+    "static/media/radboud.png": "/static/media/radboud.e1a9095c2eff0bc93f0c.png",
+    "static/media/openbet.png": "/static/media/openbet.862c3d57d6b6d6bdcf53.png",
+    "static/media/allura.png": "/static/media/allura.0cea88931db913eac0cd.png",
+    "static/media/allura_about.png": "/static/media/allura_about.52686717c13f9cb279b6.png",
+    "static/media/stonebranch.png": "/static/media/stonebranch.567a8145e9defc7dd3f5.png",
+    "static/media/meeting.png": "/static/media/meeting.7a22d42349ca60f21d75.png",
+    "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
+    "index.html": "/index.html",
+    "main.461e130f.css.map": "/static/css/main.461e130f.css.map",
+    "main.0370c19c.js.map": "/static/js/main.0370c19c.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.461e130f.css",
+    "static/js/main.0370c19c.js"
+  ]
+}
