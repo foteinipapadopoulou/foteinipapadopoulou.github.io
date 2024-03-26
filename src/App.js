@@ -23,7 +23,6 @@ function App() {
 
   useEffect(() => {
     ReactGA.initialize("G-D5V669R1DV");
-    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   const [load, upadateLoad] = useState(true);
