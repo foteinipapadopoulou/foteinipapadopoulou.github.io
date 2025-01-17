@@ -6,7 +6,6 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact/Contact";
-import ReactGA from 'react-ga4';
 import {
   BrowserRouter as Router,
   Route,
@@ -20,10 +19,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 function App() {
-
-  useEffect(() => {
-    ReactGA.initialize("G-D5V669R1DV");
-  }, []);
 
   const [load, upadateLoad] = useState(true);
 
