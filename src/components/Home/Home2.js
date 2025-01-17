@@ -18,15 +18,14 @@ function Home2() {
             </h1>
             <p className="home-about-body">
             My enthusiasm for programming and software development was sparked during my time at university. 
-            I am a passionate software and AI engineer who loves to code and build products that positively impact people's lives. 
+            I am a passionate AI/NLP engineer who loves to code and build products that positively impact people's lives. 
              
               <br />
-              <br />I am fluent in <b className="purple"> Python and Java. </b>
               <br />
               <br />
               My fields of interest's are building &nbsp;
               <i>
-                <b className="purple">AI/ML software and products </b> and
+                <b className="purple">AI/NLP software and products </b> and
                 also in areas related to{" "}
                 <b className="purple">
                   Web Technologies.

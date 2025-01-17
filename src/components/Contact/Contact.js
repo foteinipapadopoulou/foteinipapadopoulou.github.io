@@ -75,7 +75,7 @@ function Contact() {
               <strong className="purple">CONTACT</strong>
             </h1>
             
-            <p><AiTwotoneEnvironment /> Nijmegen, Netherlands & Athens, Greece </p>
+            <p><AiTwotoneEnvironment /> 's-Hertogenbosch, Netherlands & Athens, Greece </p>
             <p><AiOutlineMail/> fotinipapad [at] outlook [dot] com</p>
              
             </div>
