@@ -35,8 +35,7 @@ function AppContent() {
   return (
     <>
       <Preloader load={load} />
-      <div className={isLuxembourgRoute ? "Luxembourg-App" : "App"} 
-           id={load ? "no-scroll" : "scroll"}>
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
         
         {/* Conditionally render Navbar */}
         {!isLuxembourgRoute && <Navbar />}
