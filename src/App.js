@@ -16,6 +16,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import LuxembourgTrip from "./components/LuxembourgTrip";
+
+
 
 
 function App() {
@@ -38,13 +41,15 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/luxembourg" element={<LuxembourgTrip />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          // <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
       </div>
+    
     </Router>
   );
 }
