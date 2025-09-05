@@ -16,15 +16,15 @@ const LuxembourgTrip = () => {
           info: "Ο κεντρικός σιδηροδρομικός σταθμός του Λουξεμβούργου άνοιξε το 1859 και είναι ο κύριος σιδηροδρομικός κόμβος της χώρας. Το σύγχρονο κτίριο ολοκληρώθηκε το 2017 με σχεδιασμό του αρχιτέκτονα José Rafael Moneo. Ο σταθμός εξυπηρετεί περίπου 50.000 επιβάτες ημερησίως.",
           budget: "Μετάβαση: ΔΩΡΕΑΝ με δημόσιες συγκοινωνίες",
           wikipedia: "https://en.wikipedia.org/wiki/Luxembourg_railway_station",
-          googleMaps: "https://maps.google.com/maps?q=Luxembourg+Central+Station"
+          googleMaps: "https://maps.app.goo.gl/hbppGKwnZtLGKrP79"
         },
         {
           time: "20:00",
-          activity: "Check-in στο ξενοδοχείο στη Bonnevoie",
-          location: "Bonnevoie (κοντά στο Théâtre Ouvert)",
+          activity: "Check-in στο ξενοδοχείο Pax, περιοχή Bonnevoie",
+          location: "Bonnevoie",
           info: "Η Bonnevoie είναι μια παραδοσιακή περιοχή στο νότιο τμήμα της πόλης του Λουξεμβούργου. Αναπτύχθηκε τον 19ο αιώνα ως βιομηχανική περιοχή. Το Théâtre Ouvert είναι ένας σημαντικός πολιτιστικός χώρος που φιλοξενεί θεατρικές παραστάσεις και εκδηλώσεις. Η περιοχή συνδέεται με το κέντρο με τις γραμμές λεωφορείων 16, 18.",
           budget: "",
-          googleMaps: "https://maps.google.com/maps?q=Bonnevoie+Luxembourg+Théâtre+Ouvert"
+          googleMaps: "https://maps.app.goo.gl/yMr6KM2c9YeG6rf16"
         },
         {
           time: "20:30",
@@ -52,11 +52,11 @@ const LuxembourgTrip = () => {
               price: "€14-20"
             }
           ],
-          wikipedia: "https://en.wikipedia.org/wiki/Place_d%27Armes,_Luxembourg_City",
-          googleMaps: "https://maps.google.com/maps?q=Place+d'Armes+Luxembourg+City"
+          wikipedia: "https://en.m.wikipedia.org/wiki/Place_d%27Armes_(Luxembourg",
+          googleMaps: "https://maps.app.goo.gl/Jx8tA5UGaZjCQ8WC7"
         }
       ],
-      publicTransport: "Λεωφορείο 16 από Bonnevoie → Κέντρο (στάση Hamilton)"
+      publicTransport: "https://maps.app.goo.gl/Xy9TNbLeuZTz5UMr6?g_st=ac"
     },
     {
       date: "Σάββατο 6 Σεπτεμβρίου",
