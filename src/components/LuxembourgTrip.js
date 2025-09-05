@@ -33,26 +33,16 @@ const LuxembourgTrip = () => {
           info: "Η Place d'Armes είναι η κεντρική πλατεία της πόλης του Λουξεμβούργου, δημιουργήθηκε τον 19ο αιώνα. Περιβάλλεται από κτίρια νεοκλασικής αρχιτεκτονικής και φιλοξενεί το περίπτερο μουσικής από το 1889. Κάθε εβδομάδα διοργανώνονται συναυλίες και εκδηλώσεις.",
           budget: "€15-25 ανά άτομο",
           restaurants: [
+          
             {
-              name: "Am Tiirmschen",
-              cuisine: "Λουξεμβουργιανή",
-              recommended: "Bouneschlupp (σούπα φασολιών), Judd mat Gaardebounen (καπνιστό χοιρινό με φασόλια)",
-              price: "€18-24"
-            },
-            {
-              name: "Pizzeria Da Vinci",
+              name: "Luigi’s Italian Food",
               cuisine: "Ιταλική/Pizza",
-              recommended: "Pizza Margherita, Pizza Quattro Stagioni, Pasta Carbonara",
-              price: "€12-18"
+              recommended: "Cortesse con cream,, Tortino, Trofie Al pesto",
+              price: "€20-30"
             },
-            {
-              name: "Urban Bar & Kitchen",
-              cuisine: "Burgers",
-              recommended: "Classic Beef Burger, Chicken Deluxe, Sweet Potato Fries",
-              price: "€14-20"
-            }
+            
           ],
-          wikipedia: "https://en.m.wikipedia.org/wiki/Place_d%27Armes_(Luxembourg",
+          wikipedia: "https://en.m.wikipedia.org/wiki/Place_d%27Armes_(Luxembourg)",
           googleMaps: "https://maps.app.goo.gl/Jx8tA5UGaZjCQ8WC7"
         }
       ],
@@ -89,6 +79,15 @@ const LuxembourgTrip = () => {
           wikipedia: "https://en.wikipedia.org/wiki/Old_Quarters_and_Fortifications_of_Luxembourg",
           googleMaps: "https://maps.google.com/maps?q=Old+Town+Luxembourg+City+UNESCO"
         },
+{
+          time: "11:30",
+          activity: "Καφεδάκι στο Do for love",
+          location: "",
+          info: "Για κρουασάν και καφεδακι",
+          budget: "1_10€",
+          wikipedia: "",
+          googleMaps: "https://maps.app.goo.gl/G6z332rkU1WfgzX2A"
+        },
         {
           time: "12:30",
           activity: "Μεσημεριανό στη Corniche",
@@ -102,12 +101,21 @@ const LuxembourgTrip = () => {
               recommended: "Gromperekichelcher (τηγανητές κροκέτες πατάτας), Rieslingspaschtéit (πάστα με κρασί Riesling)",
               price: "€16-24"
             },
-            {
-              name: "Pizza Express Luxembourg",
-              cuisine: "Pizza",
-              recommended: "Pizza Sloppy Giuseppe, Pizza American Hot, Dough Balls",
-              price: "€13-19"
-            }
+{
+              name: "The Gudde Weather",
+              cuisine: "Μπυρα",
+              recommended: "local craft beer",
+              price: "€10-20", 
+googleMaps:"https://maps.app.goo.gl/B7a77MrcZ6VWSWid7" 
+            },
+{
+              name: "Oscar's Bar",
+              cuisine: "Restaurant Bar",
+              recommended: "Burger",
+              price: "€20-30", 
+googleMaps:"https://maps.app.goo.gl/xdHaMKGNQmLwrAUz8" 
+            },
+
           ],
           wikipedia: "https://en.wikipedia.org/wiki/Chemin_de_la_Corniche",
           googleMaps: "https://maps.google.com/maps?q=Chemin+de+la+Corniche+Luxembourg"
